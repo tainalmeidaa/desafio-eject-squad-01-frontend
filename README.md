@@ -1,4 +1,4 @@
-# Desafio Eject 2026 - Squad 01 🚀
+# Desafio Eject 2026 - Squad 01 (Front-End) 🚀
 
 Repositório destinado ao desenvolvimento do desafio para a segunda etapa do PS da EJECT
 
