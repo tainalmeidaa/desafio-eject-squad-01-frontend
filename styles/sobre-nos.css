@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --dark-orange-color: #e17100;
+  --dark-orange-hover: #c55f00;
+  --light-orange-color: #fef3c6;
+  --black-color: #262626;
+  --gray-color: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#sobre-nos {
+  background-color: var(--black-color);
+  color: white;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+#sobre-nos h1 {
+  margin-bottom: 2rem;
+}
+
+#nossa-historia {
+  padding: 6rem 2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+#nossa-historia h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.historia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 4rem;
+  align-items: start;
+}
+
+.historia-texto p {
+  line-height: 1.6;
+}
+
+.historia-texto p + p {
+  margin-top: 1.2em;
+}
+
+.historia-imagem {
+  margin: 0;
+}
+
+.historia-imagem img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 768px) {
+  .historia-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .historia-imagem--1 {
+    order: 1;
+  }
+
+  .historia-texto--1 {
+    order: 2;
+  }
+
+  .historia-imagem--2 {
+    order: 3;
+  }
+
+  .historia-texto--2 {
+    order: 4;
+  }
+}
