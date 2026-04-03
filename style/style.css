@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-nav {
+  background-color: #FF8800;
+  height: 107px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  
+}
+
+#main-banner {
+  background-image: url('/imagens/home/main-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 557px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+#area-destaques{
+  background-color: lightyellow;
+  height: 737px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+#promocao-area{
+  background-color: gray;
+  height: 397px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+#sobre-espaco{
+  background-color: lightyellow;
+  height: 1041px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#main-footer{
+  background-color: orange;
+  height: 350px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+.botao-reserva{
+  background-color: #FF8800;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.img-carousel{
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+  
+}
+
+.card{
+  background-color: gray;
+  width: 268px;
+  height: 420px;
+}
