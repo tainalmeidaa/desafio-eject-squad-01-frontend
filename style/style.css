@@ -6,6 +6,7 @@
 
 #main-nav {
   background-color: #FF8800;
+  width: 1440px;
   height: 107px;
   display: flex;
   flex-direction: column; 
@@ -16,21 +17,22 @@
 }
 
 #main-banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url('/imagens/home/main-banner.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('/imagens/home/main-banner.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 28% 62%;
   background-repeat: no-repeat;
+  width: 1440px;
   height: 557px;
   display: flex;
   flex-direction: column; 
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
-  color: white;
 }
 
 #main-banner h1 {
   font-family: 'Inter', sans-serif;
+  color: rgba(240,240,240,1);
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
@@ -38,8 +40,11 @@
   margin-bottom: 10px; 
 }
 
+
+
 #area-destaques{
   background-color: purple;
+  width: 1440px;
   height: 737px;
   display: flex;
   flex-direction: column; 
@@ -49,6 +54,7 @@
 
 #promocao-area{
   background-color: gray;
+  width: 1440px;
   height: 397px;
   display: flex;
   flex-direction: column; 
@@ -59,6 +65,7 @@
 
 #sobre-espaco{
   background-color: lightyellow;
+  width: 1440px;
   height: 1041px;
   display: flex;
   flex-direction: column; 
@@ -68,6 +75,7 @@
 
 #main-footer{
   background-color: orange;
+  width: 1440px;
   height: 350px;
   display: flex;
   flex-direction: column; 
@@ -78,12 +86,28 @@
 .destaque-title{
   color: #FF8800;
 }
+
+.slogan{
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: rgba(229,229,229,1);
+  
+}
+
 .botao-reserva{
-  background-color: #FF8800;
-  color: white;
+  background-color: rgba(225,113,0,1);
+  color: rgba(240,240,240,1);
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  width: 200px;
+  height: 60px;
   padding: 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-top: 18px;
 }
 
 .img-carousel{
