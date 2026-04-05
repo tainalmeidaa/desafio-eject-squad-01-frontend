@@ -209,16 +209,42 @@
   color: rgba(255, 185, 0, 1);
 }
 
-.promocao-pratos{
-  background: rgba(225, 113, 0, 1);
+.container-pratos{
   width: 556px;
   height: 308px;
+  position: relative;
+  overflow: hidden;
+  
+}
+.container-pratos figure{
+  position: absolute;
+  margin: 0; 
+  padding: 0;
 }
 
-.prato1-fundo,.prato2-meio,.prato3-frente{
-  width: 200px;
-  height: 150px;
+.container-pratos figure img{
+  width: 300px;
+  height: 154px;
   object-fit: cover;
+  display: block;
+}
+
+.container-pratos figure#prato1{
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.container-pratos figure#prato2{
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.container-pratos figure#prato3{
+  top: 80px;
+  left: 0;
+  z-index: 3;
 }
 
 .carousel-title{ 
