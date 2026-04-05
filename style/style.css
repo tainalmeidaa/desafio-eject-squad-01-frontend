@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-#main-nav {
-  background-color: #FF8800;
-  width: 1440px;
-  height: 107px;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center;
-  padding-top: 40px;
-  
-}
-
 #main-banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('/imagens/home/main-banner.jpg');
   background-size: cover;
@@ -39,8 +27,6 @@
   font-weight: bold;
 }
 
-
-
 #area-destaques{
   background-color: rgba(240, 240, 240, 1);
   width: 1440px;
@@ -49,32 +35,31 @@
   flex-direction: column; 
   align-items: center;
   justify-content: center;
-  
 }
 
 #promocao-area{
-  background-color: gray;
   width: 1440px;
   height: 389px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: row; 
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   padding: 40px;
+  background: linear-gradient(135deg, #763B00 0%, #805C39 46.4%, #4C3722 100%), linear-gradient(0deg, #FFC489, #FFC489);
 }
 
 #sobre-espaco{
-  background-color: lightyellow;
+  background-color: rgba(255, 255, 255, 1);
   width: 1440px;
   height: 1041px;
   display: flex;
   flex-direction: column; 
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly
 }
 
 #main-footer{
-  background-color: orange;
+  background: rgba(38, 38, 38, 1);
   width: 1440px;
   height: 350px;
   display: flex;
@@ -83,8 +68,9 @@
   justify-content: flex-start;
   padding: 40px;
 }
+
 .destaque-no-titulo{
-  color: #FF8800;
+  color: rgba(225, 113, 0, 1);
 }
 
 .slogan{
@@ -93,7 +79,6 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: rgba(229,229,229,1);
-  
 }
 
 .botao-reserva{
@@ -117,15 +102,6 @@
   line-height: 36px;
   color: rgba(38,38,38,01);
   margin-bottom: 20px;
-  
-}
-
-
-.img-carousel{
-  width: 800px;
-  height: 500px;
-  object-fit: cover;
-  
 }
 
 .cards-container{
@@ -139,7 +115,6 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 15px;
-
 }
 
 .card1,.card2,.card3,.card4 {
@@ -150,22 +125,19 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
   padding-top: 30px;
-
-  
 }
+
 .cards-title{
   font-family: 'Inter', sans-serif;
   font-size: 24px;
   padding-top: 5px;
   font-weight: 600;
   line-height: 28px;
-  
-
 }
 
 .cards-texts{
@@ -174,9 +146,130 @@
   font-size: 24px;
   font-weight: 500;
   padding-left: 15px;
-
 }
 
-h1 { 
+.promocao-conteudo{
+  background-color: transparent;
+  width: 448px;
+  height: 262px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.promocao-conteudo h2{
+  font-family: 'Inter', sans-serif;
+  color:rgba(255, 255, 255, 1);
+  font-weight: 900;
+  font-style: Italic;
+  font-size: 32px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.promocao-conteudo h3{
+  font-family: 'Inter', sans-serif;
+  color:rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-style: Italic;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+}
+
+.promo-desconto{
+  font-family: 'Inter', sans-serif;
+  color:rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-style: Italic;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+}
+
+.promo-destaque{
+  opacity: 1;
+  border: 2px solid rgba(255, 255, 255, 1);
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 185, 0, 1);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  background-color:rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.promo-stars{
+  color: rgba(255, 185, 0, 1);
+}
+
+.promocao-pratos{
+  background: rgba(225, 113, 0, 1);
+  width: 556px;
+  height: 308px;
+}
+
+.prato1-fundo,.prato2-meio,.prato3-frente{
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.carousel-title{ 
   font-size: 64px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  line-height: 36px;
+  color: rgba(38, 38, 38, 1);
+}
+
+.slides-container{
+  position: relative;
+}
+.slides-wrapper {
+  width: 1118px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slides-wrapper img{
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.slider-nav{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  bottom: 1.25rem;
+  z-index: 1;
+}
+.slider-nav a{
+  margin-top: 8px;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: rgba(212, 212, 212, 1);
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.slider-nav a.active {
+  background-color: rgba(225, 113, 0, 1);
 }
