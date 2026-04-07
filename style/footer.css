@@ -74,7 +74,71 @@
   color: rgba(142, 142, 142, 1);
 }
 
+@media screen and (max-width: 768px){
+  
+  #footer-container {
+    height: auto;
+    padding: 20px 10%;
+  }
+  
+  .footer-informacoes {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    gap: 15px;
+  }
+  
+  .col1 {
+    grid-column: 1 / -1;
+    font-size: 12px;
+  }
+  
+  .col2 {
+    grid-column: 1;
+    font-size: 12px;
+  }
+  
+  .col3 {
+    grid-column: 2;
+    align-self: end;
+    padding-bottom: 5px;
+  }
+  
+  h3{
+    font-size: 14px;
+  }
+  
+  .footer-logo img{
+    width: 40%;
+    height: auto;
+  }
+  
+  .icons-redesociais img {
+    width: 20px; 
+    height: auto;
+  }
+  
+  .contato-item img {
+    width: auto;
+    height: 15px;
+  }
+  
+  .titulo-redesociais{
+    display: none;
+  }
 
+  .col4{
+    display: none;
+  }
+  
+  .eject-credits{
+    font-size: 12px;
+  }
+  .eject-credits img{
+    width: 20px; 
+    height: auto;
+  }
+  
+}
 
 
 
