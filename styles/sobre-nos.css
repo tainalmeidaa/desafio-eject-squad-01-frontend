@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --dark-orange-color: #e17100;
+  --dark-orange-hover: #c55f00;
+  --light-orange-color: #fef3c6;
+  --black-color: #262626;
+  --gray-color: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#sobre-nos {
+  background-color: var(--black-color);
+  color: white;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+#sobre-nos h1 {
+  margin-bottom: 2rem;
+}
+
+#nossa-historia {
+  padding: 6rem 2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+#nossa-historia h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.historia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 4rem;
+  align-items: start;
+}
+
+.historia-texto p {
+  line-height: 1.6;
+}
+
+.historia-texto p + p {
+  margin-top: 1.2em;
+}
+
+.historia-imagem {
+  margin: 0;
+}
+
+.historia-imagem img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+#missao-visao-valores {
+  background-color: var(--gray-color);
+  padding: 6rem 2rem;
+}
+
+#missao-visao-valores h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mvv-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mvv-card {
+  flex: 1 1 28rem;
+  max-width: 36rem;
+  padding: 3rem 2.4rem;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.4rem 2.4rem rgba(38, 38, 38, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mvv-card__icon {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  background-color: var(--light-orange-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-shrink: 0;
+}
+
+.mvv-card__icon img {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: block;
+}
+
+.mvv-card__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.mvv-card__text {
+  line-height: 1.6;
+  opacity: 0.92;
+}
+
+#nossos-servicos {
+  background-color: var(--gray-color);
+  padding: 6rem 2rem;
+}
+
+#nossos-servicos h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicos-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servico-card {
+  flex: 1 1 24rem;
+  max-width: 28rem;
+  padding: 3rem 2.4rem;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.4rem 2.4rem rgba(38, 38, 38, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servico-card__icon {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  background-color: var(--light-orange-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-shrink: 0;
+}
+
+.servico-card__icon img {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: block;
+}
+
+.servico-card__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
+}
+
+.servico-card__text {
+  flex-grow: 1;
+  line-height: 1.6;
+  opacity: 0.92;
+}
+
+.nossa-equipe {
+  background-color: #fff;
+  padding: 6rem 2rem 8rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.nossa-equipe__header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.nossa-equipe__header h1 {
+  font-size: clamp(2.8rem, 4vw, 3.6rem);
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.nossa-equipe__subtitle {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.5;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.nossa-equipe__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 3rem;
+  align-items: start;
+}
+
+.equipe-card {
+  text-align: center;
+  max-width: 52rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.equipe-card__media {
+  border-radius: 1.8rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  aspect-ratio: 1 / 1;
+}
+
+.equipe-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.equipe-card__name {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+.equipe-card__role {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--dark-orange-color);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.equipe-card__bio {
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.55;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .historia-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .historia-imagem--1 {
+    order: 1;
+  }
+
+  .historia-texto--1 {
+    order: 2;
+  }
+
+  .historia-imagem--2 {
+    order: 3;
+  }
+
+  .historia-texto--2 {
+    order: 4;
+  }
+
+  .mvv-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mvv-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .servicos-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servico-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .nossa-equipe__header {
+    margin-bottom: 3.5rem;
+  }
+
+  .nossa-equipe__grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+}
