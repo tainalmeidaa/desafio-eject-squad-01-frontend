@@ -1,12 +1,19 @@
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.getElementById("primary-nav");
+function initializeNavbar() {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navbarMenu = document.getElementById("primary-nav");
 
-if (toggle && nav) {
-  toggle.addEventListener("click", function () {
-    nav.classList.toggle("navbar-nav--open");
-    toggle.classList.toggle(
+  if (!menuToggle || !navbarMenu) return;
+  if (menuToggle.dataset.bound === "true") return;
+
+  menuToggle.addEventListener("click", function () {
+    navbarMenu.classList.toggle("navbar__menu--open");
+    menuToggle.classList.toggle(
       "menu-toggle--open",
-      nav.classList.contains("navbar-nav--open"),
+      navbarMenu.classList.contains("navbar__menu--open"),
     );
   });
+
+  menuToggle.dataset.bound = "true";
 }
+
+initializeNavbar();

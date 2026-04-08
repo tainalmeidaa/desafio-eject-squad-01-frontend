@@ -1,48 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-:root {
-  --dark-orange-color: #e17100;
-  --dark-orange-hover: #c55f00;
-  --light-orange-color: #fef3c6;
-  --black-color: #262626;
-  --gray-color: #f0f0f0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-}
-
-.button {
-  border: none;
-  background-color: var(--dark-orange-color);
-  color: white;
-  font-weight: 700;
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.button:hover {
-  background-color: var(--dark-orange-hover);
-}
-
 .navbar-wrapper {
   position: relative;
   z-index: 10;
-  border-bottom: 2px solid var(--gray-color);
+  border-bottom: 2px solid var(--color-gray);
+  background-color: var(--color-white);
 }
 
 .navbar {
@@ -50,38 +10,39 @@ body {
   margin-inline: auto;
 }
 
-.navbar-content {
-  padding: 2rem;
+.navbar__content {
+  padding: var(--space-sm) var(--section-inline);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar-content .logo {
+.navbar__logo {
   height: 4rem;
 }
 
-.navbar-content .navbar-list {
-  list-style-type: none;
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.navbar__list {
+  list-style: none;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: var(--space-xl);
 }
 
-.navbar-content .navbar-list li {
+.navbar__list a {
+  color: inherit;
+  text-decoration: none;
   transition: color 100ms ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    color: var(--dark-orange-color);
-  }
 }
 
-.navbar-nav {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+.navbar__list a:hover {
+  color: var(--color-orange);
 }
 
 .button--nav {
@@ -92,21 +53,21 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem;
-  margin: -0.8rem;
+  padding: var(--space-xs);
+  margin: calc(-1 * var(--space-xs));
   border: none;
   background: transparent;
   cursor: pointer;
-  color: var(--dark-orange-color);
+  color: var(--color-orange);
 }
 
-.menu-toggle-icon {
+.menu-toggle__icon {
   position: relative;
   width: 2.4rem;
   height: 2.4rem;
 }
 
-.menu-toggle-bar {
+.menu-toggle__bar {
   position: absolute;
   left: 50%;
   width: 2.2rem;
@@ -117,34 +78,33 @@ body {
   transition: all 0.25s ease;
 }
 
-.menu-toggle-bar:nth-child(1) {
+.menu-toggle__bar:nth-child(1) {
   top: 0.45rem;
 }
 
-.menu-toggle-bar:nth-child(2) {
+.menu-toggle__bar:nth-child(2) {
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.menu-toggle-bar:nth-child(3) {
+.menu-toggle__bar:nth-child(3) {
   bottom: 0.45rem;
   top: auto;
   transform: translateX(-50%);
 }
 
-.menu-toggle.menu-toggle--open .menu-toggle-bar:nth-child(1) {
+.menu-toggle--open .menu-toggle__bar:nth-child(1) {
   top: 50%;
-  bottom: auto;
   width: 2.4rem;
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.menu-toggle.menu-toggle--open .menu-toggle-bar:nth-child(2) {
+.menu-toggle--open .menu-toggle__bar:nth-child(2) {
   opacity: 0;
   transform: translate(-50%, -50%) scaleX(0);
 }
 
-.menu-toggle.menu-toggle--open .menu-toggle-bar:nth-child(3) {
+.menu-toggle--open .menu-toggle__bar:nth-child(3) {
   top: 50%;
   bottom: auto;
   width: 2.4rem;
@@ -152,7 +112,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar-content .logo {
+  .navbar__logo {
     height: 3rem;
   }
 
@@ -161,7 +121,7 @@ body {
     margin-left: auto;
   }
 
-  .navbar-nav {
+  .navbar__menu {
     display: none;
     position: absolute;
     left: 0;
@@ -171,29 +131,25 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    padding: 2rem;
-    border-top: 2px solid var(--gray-color);
-    border-bottom: 2px solid var(--gray-color);
-    background-color: #fff;
+    padding: var(--gap-section);
+    border-top: 2px solid var(--color-gray);
+    border-bottom: 2px solid var(--color-gray);
+    background-color: var(--color-white);
     box-shadow: 0 0.8rem 2rem rgba(38, 38, 38, 0.07);
     text-align: center;
   }
 
-  .navbar-nav.navbar-nav--open {
+  .navbar__menu--open {
     display: flex;
   }
 
-  .navbar-content .navbar-list {
+  .navbar__list {
     flex-direction: column;
-    align-items: center;
-    gap: 1.6rem;
+    gap: var(--space-md);
     width: 100%;
   }
 
   .button--nav {
-    margin-top: 1.6rem;
-    width: auto;
-    align-self: center;
-    text-align: center;
+    margin-top: var(--space-md);
   }
 }
