@@ -31,18 +31,20 @@
 #area-destaques{
   background-color: rgba(240, 240, 240, 1);
   width: 100%;
-  height: 591px;
+  height: auto;
   display: flex;
-  flex-direction: column; 
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  padding: 5%;
+  gap: 10px;
 }
 
 #promocao-area{
   width: 100%;
-  height: 389px;
+  min-height: 389px;
   display: flex;
-  flex-direction: row; 
+  flex-flow: row wrap; 
   align-items: center;
   justify-content: space-evenly;
   padding: 40px;
@@ -102,10 +104,10 @@
 
 .cards-container{
   background: rgba(240, 240, 240, 1);
-  width: 1120px;
-  height: 420px;
+  width: 100%;
+  min-height: 420px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   gap: 24px;
   margin: 20px auto;
@@ -115,8 +117,8 @@
 
 .card1,.card2,.card3,.card4 {
   background-color: rgba(255, 255, 255, 1);
-  width: 268px;
-  min-height: 420px;
+  max-width: 268px;
+  max-height: 420px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 15px;
@@ -295,4 +297,73 @@
 
 .slider-nav a.active {
   background-color: rgba(225, 113, 0, 1);
+}
+
+@media screen and (max-width: 768px){
+  
+  #main-banner{
+    height: auto;
+    min-height: 273px;
+  }
+  
+  #main-banner h1 {
+    font-size: 30px;
+  }
+  
+  .slogan{font-size: 12px;}
+  
+  #area-destaques{
+  width: 100%;
+  height: auto;
+  }
+  
+  .botao-reserva{
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1px 35px 1px 35px;
+  }
+  
+  #area-destaques{
+    min-height: 591px;;
+  }
+  
+  .title-destaques{
+    font-size: 32px;
+  }
+  
+  .cards-container{
+    min-height: 420px;
+    flex-flow: row wrap;
+  }
+  
+  .card1,.card2,.card3,.card4 {
+    width: 90%;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 10px;
+    
+    
+    
+  }
+  
+  .img-cards{
+    width: auto;
+    height: 20%;
+    
+  }
+  .cards-title{
+    font-size: 18px;}
+  
+  .cards-texts{
+    width: 90%;
+    font-size: 18px;
+    text-align: top;
+    margin-top: 15px;
+}
+  
 }
